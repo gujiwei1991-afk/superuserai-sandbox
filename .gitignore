@@ -1,0 +1,17 @@
+# auto-added by SuperUserAI dev-agent
+node_modules/
+dist/
+build/
+.next/
+.vite/
+coverage/
+.cache/
+.turbo/
+.parcel-cache/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.env
+.env.local
+.DS_Store
