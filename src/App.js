@@ -19,6 +19,10 @@ const App = () => {
     setTodos(todos.filter(todo => todo.id !== id));
   };
 
+  const clearCompleted = () => {
+    setTodos(todos.filter(todo => !todo.completed));
+  };
+
   return (
     <div>
       <TodoForm onAddTodo={addTodo} />
@@ -26,6 +30,7 @@ const App = () => {
         todos={todos}
         onToggleComplete={toggleComplete}
         onDelete={deleteTodo}
+        onClearCompleted={clearCompleted}
       />
     </div>
   );

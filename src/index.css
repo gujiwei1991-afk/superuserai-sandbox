@@ -11,3 +11,51 @@ li input[type="checkbox"] {
 li button {
   margin-left: 10px;
 }
+
+.todo-list-footer {
+  margin-top: 12px;
+}
+
+.clear-completed-button {
+  cursor: pointer;
+}
+
+.confirm-dialog-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.confirm-dialog {
+  background: #fff;
+  border-radius: 6px;
+  padding: 20px 24px;
+  min-width: 280px;
+  max-width: 90vw;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.confirm-dialog-title {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+}
+
+.confirm-dialog-message {
+  margin: 0 0 20px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.confirm-dialog-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.confirm-dialog-actions button {
+  cursor: pointer;
+}
